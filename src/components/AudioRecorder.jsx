@@ -32,7 +32,7 @@ const AudioRecorder = ({ permission, setPermission }) => {
             requestPermission();
             setPermission(true);
           }}
-          className="absolute right-5 bottom-20 bg-green-800 rounded-full hover:bg-green-900 text-white font-medium  p-3 h-16 w-16 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition"
+          className="absolute right-2 md:right-5 bottom-10 md:bottom-20 bg-green-800 rounded-full hover:bg-green-900 text-white font-medium  p-3 h-16 w-16 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition"
         >
           Start
         </button>
@@ -53,7 +53,7 @@ const AudioRecorder = ({ permission, setPermission }) => {
               recordingStatus !== "recording"
                 ? "bg-gray-400 cursor-not-allowed"
                 : "bg-red-600 hover:bg-red-700"
-            } absolute right-5 bottom-20 text-white font-medium rounded-full h-16 w-16 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 transition`}
+            } absolute right-2 md:right-5 bottom-10 md:bottom-20 text-white font-medium rounded-full h-16 w-16 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 transition`}
           >
             Stop
           </button>
